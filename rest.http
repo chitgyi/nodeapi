@@ -1,17 +1,17 @@
-@url = http://localhost:8000
+@url = https://todonodeapicya.herokuapp.com
 
 GET {{url}}/api/v1/todos
 
 ###
-GET {{url}}/api/v1/todos/2
+GET {{url}}/api/v1/todos/1
 
 ###
 POST {{url}}/api/v1/todos
 Content-Type: application/json
 
 {
-    "name": "todo name last",
-    "description": "todo description last"
+    "name": "todo name",
+    "description": "todo description"
 }
 
 ###
@@ -24,4 +24,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE  {{url}}/api/v1/todos/10
+DELETE  {{url}}/api/v1/todos/2
