@@ -1,0 +1,27 @@
+@url = http://localhost:8000
+
+GET {{url}}/api/v1/todos
+
+###
+GET {{url}}/api/v1/todos/2
+
+###
+POST {{url}}/api/v1/todos
+Content-Type: application/json
+
+{
+    "name": "todo name last",
+    "description": "todo description last"
+}
+
+###
+PUT  {{url}}/api/v1/todos/2
+Content-Type: application/json
+
+{
+    "name": "todo name 2 update again and again",
+    "description": "todo description"
+}
+
+###
+DELETE  {{url}}/api/v1/todos/10
